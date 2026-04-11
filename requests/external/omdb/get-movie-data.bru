@@ -1,0 +1,16 @@
+meta {
+  name: get-movie-data
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://www.omdbapi.com/?t=Inception&apikey={{apikey}}
+  body: none
+  auth: none
+}
+
+params:query {
+  t: Inception
+  apikey: {{apikey}}
+}
