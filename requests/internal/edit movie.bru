@@ -1,0 +1,38 @@
+meta {
+  name: edit movie
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3000/movies/tt123456
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "imdbID": "tt12345",
+    "title": "No Idea",
+    "released": "2026-04-16",
+    "runtime": 123,
+    "genres": [
+      "Adventure",
+      "Thriller",
+      "Action"
+    ],
+    "directors": [
+      "Tobias Schmidt"
+    ],
+    "actors": [
+      "Tobias Schmidt"
+    ],
+    "writers": [
+      "Tobias Schmidt"
+    ],
+    "plot": "The story of someone who has no idea what he is doing. Well maybe he knows a little...",
+    "poster": "images/custom-movie.png",
+    "metascore": 99,
+    "imdbRating": 10.0
+  }
+}
